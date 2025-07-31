@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>シンプルオセロ - ゲーム</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/game.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="game-info">
+        <div class="player-info">
+          <div class="player black-player">
+            <span class="disc black"></span>
+            <span>あなた: <span id="blackCount">2</span></span>
+          </div>
+          <div class="player white-player">
+            <span class="disc white"></span>
+            <span>コンピューター: <span id="whiteCount">2</span></span>
+          </div>
+        </div>
+        <div class="current-turn">
+          <span id="turnDisplay">あなたの番です</span>
+        </div>
+      </div>
+
+      <div id="board" class="board">
+        <!-- 8x8のボードがJavaScriptで生成されます -->
+      </div>
+
+      <div class="game-controls">
+        <button id="resetButton" class="btn">新しいゲーム</button>
+        <button id="backToStartButton" class="btn">スタート画面に戻る</button>
+      </div>
+    </div>
+
+    <script src="js/game-state.js"></script>
+    <script src="js/board.js"></script>
+    <script src="js/ai.js"></script>
+    <script src="js/game.js"></script>
+  </body>
+</html>

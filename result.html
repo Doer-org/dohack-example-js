@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>シンプルオセロ - 結果</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/result.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2 id="gameResult">ゲーム終了</h2>
+      <div class="final-score">
+        <div class="score-item">
+          <span class="disc black"></span>
+          <span>あなた: <span id="finalBlackCount">0</span></span>
+        </div>
+        <div class="score-item">
+          <span class="disc white"></span>
+          <span>コンピューター: <span id="finalWhiteCount">0</span></span>
+        </div>
+      </div>
+      <div class="game-controls">
+        <button id="playAgainButton" class="btn">もう一度プレイ</button>
+        <button id="backToStartButton" class="btn">スタート画面に戻る</button>
+      </div>
+    </div>
+
+    <script src="js/result.js"></script>
+  </body>
+</html>
